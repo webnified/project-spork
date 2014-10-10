@@ -1,21 +1,29 @@
-.image-wrapper {
-	margin:0;
-	background-color: black;
-	width: inherit;
+.image-wrapper
+{
+    width: inherit;
+    height: 410px;
+    margin: 0;
+
+    background-color: black;
 }
 
-.food-tray {
-	display: inline;
-  list-style-type: none;
+.food-tray
+{
+    display: inline;
+
+    list-style-type: none;
 }
 
-.img-size {
-	width: 23%;
+.img-size
+{
+    width: 23%;
 }
 
-.images-rotator {
+.images-rotator
+{
     padding: 0;
 }
-.images-rotator > .food-tray {
+.images-rotator > .food-tray
+{
     margin-left: 15px;
 }
