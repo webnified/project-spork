@@ -1,0 +1,107 @@
+  .footer-inner-container
+{
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.footer-titles
+{
+    font-family: Agency FB;
+    font-size: 18px;
+    font-weight: bolder;
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.address
+{
+    font-family: Gibson;
+    font-size: 14px;
+    line-height: 24px;
+}
+.contan-num
+{
+    font-family: Gibson;
+    font-size: 24px;
+    line-height: 35px;
+
+    margin-bottom: 15px;
+}
+.contan-num p
+{
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.accepts
+{
+    font-family: Gibson;
+    font-size: 16px;
+
+    margin-top: 30px;
+    margin-left: -15px;
+}
+.list > ul > li
+{
+    font-family: Gibson;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 24px;
+
+    list-style: initial;
+}
+
+.icon
+{
+    width: 65px;
+    padding: 5px;
+}
+.list > ul
+{
+    margin-left: -25px;
+}
+.map-img
+{
+    width: 544px;
+    height: 279px;
+
+    border: 1px solid #b39862;
+}
+.copyright
+{
+    font-family: Gibson;
+    font-size: 12px;
+
+    margin-top: 20px;
+}
+.web
+{
+    width: 20px;
+}
+.right
+{
+    text-align: right;
+}
+.spot
+{
+    position: static;
+    z-index: 1;
+
+    margin-top: -163px;
+    margin-left: 234px;
+}
+.unstyled .icon
+{
+    width: 30px;
+}
+.unstyled
+{
+    padding: 0;
+
+    list-style: none;
+}
+.unstyled > li
+{
+    display: inline-block;
+}

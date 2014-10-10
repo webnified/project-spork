@@ -1,0 +1,108 @@
+.header
+{
+    width: 100%;
+    margin: 0 auto 0;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: black;
+}
+.row.navigator
+{
+    position: relative;
+    z-index: 1;
+
+    width: inherit;
+    height: 320px;
+    margin-top: -115px;
+    margin-left: 0;
+
+    background-image: url('../img/header/menu-bg.png');
+    background-size: 100% 320px;
+}
+
+.comp-logo {
+    width: 320px;
+    position: relative;
+    bottom: 10px;
+    left: 25px;
+}
+
+.col-md-12.position-logo
+{
+    position: relative;
+    top: -59px;
+
+    width: 100%;
+    margin: 0;
+    margin-left: -39;
+}
+
+.row.image-wrapper
+{
+    margin-left: 0;
+}
+
+.list-icon
+{
+    width: 80%;
+}
+
+.book-online
+{
+    font-family: 'Agency FB', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+
+    position: absolute;
+    top: 300px;
+    left: 87px;
+
+    display: block;
+
+    width: 200px;
+    padding: 5px 15px;
+
+    text-align: center;
+
+    color: #000;
+    border: 2px solid #a7906b;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+    background: #e0c9a4;
+    background:    -moz-linear-gradient(top,  #e0c9a4 52%, #a7906b 93%, #a7906b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(52%,#e0c9a4), color-stop(93%,#a7906b), color-stop(100%,#a7906b));
+    background: -webkit-linear-gradient(top,  #e0c9a4 52%,#a7906b 93%,#a7906b 100%);
+    background:      -o-linear-gradient(top,  #e0c9a4 52%,#a7906b 93%,#a7906b 100%);
+    background:     -ms-linear-gradient(top,  #e0c9a4 52%,#a7906b 93%,#a7906b 100%);
+    background:         linear-gradient(to bottom,  #e0c9a4 52%,#a7906b 93%,#a7906b 100%);
+    background-color: #e3cca7;
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0c9a4', endColorstr='#a7906b',GradientType=0 );
+}
+
+.book-quote > p
+{
+    font-weight: bold;
+}
+
+section.col-md-6
+{
+    margin-right: -6px;
+}
+
+section.col-md-4.col-icon.first-set-icon
+{
+    margin-top: 100px;
+    margin-left: 44px;
+}
+
+section.col-md-4.col-icon.second-set-icon
+{
+    margin-top: 100px;
+    margin-left: -47px;
+}

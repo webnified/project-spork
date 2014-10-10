@@ -1,0 +1,67 @@
+
+.container
+{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.modal
+{
+    width: 79%;
+    margin: 0 auto;
+    padding: 5px 5px 5px 5px;
+
+    border: 1px solid #b29558;
+    border-radius: 10px;
+}
+.modal-img
+{
+    margin: 0 15px 0 30px;
+}
+
+.modal-close
+{
+    font-family: Gibson;
+    font-size: 32px;
+
+    margin-right: 5px;
+    padding: 5;
+
+    text-align: right;
+}
+.modal-close > a
+{
+    text-decoration: none;
+
+    color: black;
+}
+.modal-img
+{
+    height: 230px;
+}
+.modal-title
+{
+    font-family: Agency FB;
+    font-size: 26px;
+}
+.message
+{
+    font-family: Gibson;
+    font-size: 16px;
+    line-height: 27px;
+
+    padding: 17px 0 17px 0;
+}
+.booking
+{
+    font-family: Gibson;
+    font-size: 18px;
+
+    color: #c3b39b;
+}
+.booking > a
+{
+    font-style: italic;
+
+    color: #c3b39b;
+}

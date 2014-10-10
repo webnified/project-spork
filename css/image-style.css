@@ -1,0 +1,21 @@
+.image-wrapper {
+	margin:0;
+	background-color: black;
+	width: inherit;
+}
+
+.food-tray {
+	display: inline;
+  list-style-type: none;
+}
+
+.img-size {
+	width: 23%;
+}
+
+.images-rotator {
+    padding: 0;
+}
+.images-rotator > .food-tray {
+    margin-left: 15px;
+}

@@ -1,0 +1,175 @@
+.menu-packages-container {
+    width: 100%;margin-top:60;
+}
+.menu-package.row{
+    margin-left: 3px;
+    width: 100%;
+}
+.container {
+    width: 960px;
+    margin: 0px auto;
+}
+.menu-packages {
+    font-size: 36px;
+    font-family: Agency FB;
+    padding-bottom: 80px;
+}
+.menu-packages-title {
+    font-size: 25px;
+    font-family: Gibson;
+}
+
+.normal.col-md-2{
+    padding: 5px;
+    width:98px;
+    margin-top: 40px;
+    text-align: center;
+    border-left: 1px solid gainsboro;
+}
+.menu-icon{
+    background-color: gainsboro;
+    padding: 5px;
+    margin:0 5px 0 5px; 
+    border-radius: 50px;
+    width: 66;
+}
+.menu-upperleft-icon.col-md-2{
+    padding: 5px;
+    width:98px;
+    margin-left: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+.menu-lowerleft-icon.col-md-2{
+    padding: 5px;
+    margin-top: 40px;
+    margin-left:92px;
+    width:98px;
+    text-align: center;
+}
+.menu-content.col-md-12{
+    border:1px solid rgb(167, 157, 157);
+    border-radius: 5px;
+    margin-left: 0px;
+    padding: 0;
+    margin-top: 5%;
+}
+.menu-close{
+    float: right;
+    padding: 10px 10px 0 0;
+    color: initial;
+}
+.menu-content-title{
+    font-family: Gibson;
+    font-size: 25px;
+    padding:15px;
+    border-bottom: 1px solid rgb(167, 157, 157);
+}
+.menu.col-md-6{
+    padding: 5px;
+}
+.arrowUp{
+
+}
+
+
+.normal.col-md-4{
+    padding: 5px;
+    text-align: center;
+    width:136px;
+    margin-top:40px;
+    border-left: 1px solid gainsboro;
+}
+
+.package-icon{
+    background-color: gainsboro;
+    padding: 5px;
+    margin: 0px 30px 0 30px;
+    border-radius: 50px;
+    width: 66;
+}
+.package-upperleft-icon.col-md-4{
+    padding: 5px;
+    text-align: center;
+    width:136px;
+    margin:40px 0 0 90px;
+}
+.package-lowerleft-icon.col-md-4{
+    padding: 5px;
+    text-align: center;
+    width:136px;
+    margin:40px 0 2px 160px;
+}
+.packages{
+    padding: 5px;
+}
+.package-content{
+    border:1px solid rgb(167, 157, 157);
+    border-radius: 5px;
+    margin-left: 0px;
+    padding: 0 !important;
+    margin-top: 5%;
+}
+.package-close{
+    float: right;
+    padding: 10px 10px 0 0;
+}
+
+.package-content-title{
+    font-family: Gibson;
+    font-size: 25px;
+    padding:15px;
+    border-bottom: 1px solid rgb(167, 157, 157);
+}
+.package-list-title{
+    font-size: 18px;
+    padding: 15px 0px 0px 10px;
+}
+.package-lists.col-md-5{
+    margin-left: 30px;
+    padding: 10px 10px 0 0;
+}
+.package-lists > li{
+    margin-bottom: 15px; 
+    list-style: disc;
+}
+.package-sub-nav.col-md-12{
+    font-size:25px;
+    font-weight: bold;
+    margin-top: 40px;
+    word-spacing: 20px;
+    padding-left: 20px;
+    border-bottom: 1px solid rgb(167, 157, 157);
+}
+.package-sub-nav.col-md-12 > a{
+    color: black; 
+    text-decoration: none;
+}
+
+.food-img.col-md-4{
+    padding: 10px;
+}
+.package-img{
+    width: 100%;
+    padding: 10px;
+}
+a:hover section.col-md-2,a:hover section.col-md-4{
+    border-radius:5px;
+    color: white;
+    background-color: black;
+}
+
+.active{
+    border-radius:5px;
+    color: white;
+    background-color: black;
+}
+.priceActive{
+    padding: 5px 15px;
+ padding-bottom:3px;   border:1px solid rgb(167, 157, 157);
+    border-bottom: 1px solid white;
+    
+}
+
+
+ 
