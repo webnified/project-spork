@@ -21,7 +21,7 @@
 
 .modal-close
 {
-    font-family: Gibson;
+    font-family: 'gibsonregular', sans-serif;
     font-size: 32px;
 
     margin-right: 5px;
@@ -41,12 +41,12 @@
 }
 .modal-title
 {
-    font-family: Agency FB;
+    font-family: 'agencyfb_regular', sans-serif;
     font-size: 26px;
 }
 .message
 {
-    font-family: Gibson;
+    font-family: 'gibsonregular', sans-serif;
     font-size: 16px;
     line-height: 27px;
 
@@ -54,7 +54,7 @@
 }
 .booking
 {
-    font-family: Gibson;
+    font-family: 'gibsonregular', sans-serif;
     font-size: 18px;
 
     color: #c3b39b;

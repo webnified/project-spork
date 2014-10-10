@@ -32,7 +32,7 @@
 
 .headline
 {
-    font-family: 'Agency FB', sans-serif;
+    font-family: 'agencyfb_regular', sans-serif;
 
     padding-bottom: 50px;
 
@@ -111,7 +111,7 @@
 }
 .btn
 {
-    font-family: 'Agency FB', sans-serif;
+    font-family: 'agencyfb_bold', sans-serif;
     font-size: 20px;
     font-weight: bold;
     line-height: 20px;

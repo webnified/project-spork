@@ -11,12 +11,12 @@
 }
 .menu-packages {
     font-size: 36px;
-    font-family: Agency FB;
+    font-family: 'agencyfb_regular', sans-serif;
     padding-bottom: 80px;
 }
 .menu-packages-title {
     font-size: 25px;
-    font-family: Gibson;
+    font-family: 'gibsonregular', sans-serif;
 }
 
 .normal.col-md-2{
@@ -60,7 +60,7 @@
     color: initial;
 }
 .menu-content-title{
-    font-family: Gibson;
+    font-family: 'gibsonregular', sans-serif;
     font-size: 25px;
     padding:15px;
     border-bottom: 1px solid rgb(167, 157, 157);
@@ -116,7 +116,7 @@
 }
 
 .package-content-title{
-    font-family: Gibson;
+    font-family: 'gibsonregular', sans-serif;
     font-size: 25px;
     padding:15px;
     border-bottom: 1px solid rgb(167, 157, 157);
