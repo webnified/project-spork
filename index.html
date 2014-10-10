@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 
   <head>
     <title>Spoon and Pepper - Home</title>
@@ -10,13 +10,18 @@
     <link rel="stylesheet" type="text/css" href="css/navigator.css">
     <link rel="stylesheet" type="text/css" href="css/workforce.css">
   </head>
-  
-  <body ng-app>
+
+  <body>
     <section class="container">
       <section class="header" id="header" ng-include src="'parts/header.html'">
       </section>
     </section>
+
     <section class="container">
+      <section id="views" ng-view></section>
+    </section>
+
+    <section class="container"> 
         <section class="footer-inner-container" ng-include src="'parts/footer.html'">
         </section>
     </section>
@@ -24,7 +29,7 @@
 
   <section class="scripts">
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script> 
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script> 
     <script src="lib/script.js"></script>
   </section>
 </html>
