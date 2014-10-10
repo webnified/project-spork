@@ -1,4 +1,4 @@
-  .footer-inner-container
+.footer-inner-container
 {
     width: 100%;
     margin-top: 60px;
@@ -66,7 +66,8 @@
     width: 544px;
     height: 279px;
 
-    border: 1px solid #b39862;
+    border: 1px solid #AAA;
+    border-radius: 5px;
 }
 .copyright
 {
@@ -75,9 +76,14 @@
 
     margin-top: 20px;
 }
-.web
+.copyright a {
+    text-decoration: none;
+}
+.copyright .webnified
 {
     width: 20px;
+    margin-left: 5px;
+    margin-top: -5px;
 }
 .right
 {
@@ -88,8 +94,8 @@
     position: static;
     z-index: 1;
 
-    margin-top: -163px;
-    margin-left: 234px;
+    margin-top: -350px;
+    margin-left: 215px;
 }
 .unstyled .icon
 {
