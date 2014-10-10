@@ -27,8 +27,8 @@ a
 .comp-logo {
     width: 320px;
     position: relative;
-    bottom: 10px;
-    left: 25px;
+    bottom: 15px;
+    left: -10px;
 }
 
 .col-md-12.position-logo
@@ -59,7 +59,7 @@ a
 
     position: absolute;
     top: 300px;
-    left: 87px;
+    left: 53px;
 
     display: block;
 
