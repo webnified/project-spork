@@ -1,0 +1,307 @@
+<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" href="css/booking-form.css">
+<div class="modal-form" id="booking-form">
+
+  <div class="close-btn">
+    <a href="#">x</a>
+  </div>
+
+  <div class="headline">
+    <h2 class="name">Booking Details</h2>
+  </div>
+
+  <div class="tabs">
+    <div class="tab"><a class="active" href="#">Customer Details</a></div>
+    <div class="tab"><a href="#">Order Details</a></div>
+    <div class="tab"><a href="#">Select Cuisine</a></div>
+    <div class="tab"><a href="#">Review</a></div>
+  </div>
+
+  <!-- Customer details -->
+  <div class="customer-details row">
+    <form action="" class="form">
+    <h2 class="small">Customer Details</h2>
+    <div class="col-md-12">
+
+        <div class="input-group">
+          <div class="col-md-4">
+            <div class="label">
+              <label>Customer / Company Name</label>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <input type="text" name="customerName" class="form-input" placeholder="To Appear in Official Receipt">
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="col-md-4">
+            <div class="label">
+              <label>Contact Person</label>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <input type="text" name="contactPerson" class="form-input" placeholder="Complete Name">
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="col-md-4">
+            <div class="label">
+             <label>Mobile No.</label>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <input type="text" name="mobileNo" class="form-input" placeholder="Globe, Sun or Smart">
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="col-md-4">
+            <div class="label">
+              <label>Customer Card No.</label>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <input type="text" name="customerCardNo" class="form-input" placeholder="(Optional)">
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="col-md-4">
+            <div class="label">
+              <label>Discount Certificate No.</label>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <input type="text" name="discountCertNo" class="form-input" placeholder="(Optional)">
+          </div>
+        </div>
+
+      <div class="col-md-12">
+        <button class="btn btn-primary">
+          <span class="calm">Continue to</span> Order Details
+        </button>
+      </div>
+    </div>
+
+  </form>
+  </div>
+
+  <!-- Order details -->
+  <div class="order-details row">      
+    <h2 class="small">Order Details</h2>
+    <form action="" class="form">
+        <div class="col-md-12">
+          <div class="input-group">
+            <div class="col-md-4">
+              <div class="label">
+                <label>No. of PAX</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <input type="text" name="noPax" class="form-input" placeholder="Final Guest Count to Book">
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="col-md-4">
+              <div class="label">
+                <label>Serving Date</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <input type="date" name="servingDate" class="form-input" placeholder="">
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="col-md-4">
+              <div class="label">
+                <label>Serving Time</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <input type="time" name="servingTime" class="form-input" placeholder="">
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="col-md-4">
+              <div class="label">
+                <label>Complete Address</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <input type="text" name="completeAddress" class="form-input" placeholder="Provide Landmarks if Possible">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <button class="btn btn-primary">
+            <span class="calm">Continue to</span> Cuisine Selection
+          </button>
+        </div>
+    </form>
+
+  </div>
+
+  <!-- Select menu -->
+  <div class="select-menu">
+    <form action="" class="form">
+        <h2 class="small">Select Cuisine</h2>
+        <div class="col-md-6">
+          <div class="input-group">
+            <div class="col-md-4">
+              <div class="label">
+                <label>1. Chicken OR Pork Cuisine</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <input type="text" name="cuisine1" class="form-input">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="col-md-4">
+              <div class="label">
+                <label>2. Fish Cuisine</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <input type="text" name="cuisine2" class="form-input">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="col-md-4">
+              <div class="label">
+                <label>3. Vegetables OR Salad Cuisine</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <input type="text" name="cuisine3" class="form-input">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="col-md-4">
+              <div class="label">
+                <label>4. Pasta OR Pancit Cuisine</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <input type="text" name="cuisine4" class="form-input">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="col-md-4">
+              <div class="label">
+                <label>5. Dessert Selection</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <input type="text" name="dessert" class="form-input">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="col-md-4">
+              <div class="label">
+                <label>6. Rice Selection</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <input type="text" name="rice" class="form-input">
+            </div>
+          </div>
+          
+          <div class="input-group">
+            <div class="col-md-4">
+              <div class="label">
+                <label>7. Softdrinks OR Juice</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <input type="text" name="drinks" class="form-input">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="col-md-4">
+              <div class="label">
+                <label>8. Mineral Water Station</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <input type="text" name="waterStation" class="form-input">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="col-md-4">
+              <div class="label">
+                <label>9. Mineral Water Station</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <input type="text" name="waterStation" class="form-input">
+            </div>
+          </div>
+                </div>
+
+        <div class="col-md-8 col-md-offset-4">
+          <button class="btn btn-default btn-small">
+            <span class="calm">Add another package +</span>
+          </button>
+        </div>
+
+        <div class="col-md-12">
+          <button class="btn btn-primary">
+            <span class="calm">Continue to</span> Review
+          </button>
+        </div>
+
+    </form>
+
+  </div>
+  
+  <!-- Review -->
+  <div class="review">
+    <h2 class="small col-md-12">Review</h2>
+    <div class="customer-details-info col-md-4">
+      <ul class="unstyled">
+        <li><span class="label">Customer / Company Name :</span> {missing}</li>
+        <li><span class="label">Contact Person :</span> {missing}</li>
+        <li><span class="label">Mobile No. :</span> {missing}</li>
+        <li><span class="label">Customer Card No. :</span> {missing}</li>
+        <li><span class="label">Discount Certificate No. :</span> {missing}</li>
+      </ul>
+    </div>
+    <div class="order-details-info col-md-4">
+      <ul class="unstyled">
+        <li><span class="label">No. of PAX :</span> {missing}</li>
+        <li><span class="label">Serving Date :</span> {missing}</li>
+        <li><span class="label">Serving Time :</span> {missing}</li>
+        <li><span class="label">Complete Address :</span> {missing}</li>
+      </ul>   
+    </div>
+    <div class="selected-menu col-md-4">
+      <ul class="unstyled">
+        <li><span class="label">Cuisine Selection :</span> {missing}</li>
+        <li><span class="label">Cuisine Selection :</span> {missing}</li>
+        <li><span class="label">Cuisine Selection :</span> {missing}</li>
+        <li><span class="label">Cuisine Selection :</span> {missing}</li>
+        <li><span class="label">Cuisine Selection :</span> {missing}</li>
+        <li><span class="label">Cuisine Selection :</span> {missing}</li>
+        <li><span class="label">Cuisine Selection :</span> {missing}</li>
+        <li><span class="label">Cuisine Selection :</span> {missing}</li>
+      </ul>         
+    </div>
+    <div class="col-md-12">
+      <button class="btn btn-primary">
+        Book Order
+      </button>
+    </div>
+  </div>
+
+</div>
