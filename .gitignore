@@ -5,6 +5,9 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 
+# Ignore the images for now
+img/media/*
+
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
