@@ -1,0 +1,829 @@
+<html ng-app ="modal">
+<head>
+  <style type="text/css"></style>
+  <link rel="stylesheet" href="css/menu-packages.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/image-style.css">
+  <link rel="stylesheet" type="text/css" href="css/navigator.css">
+  <link rel="stylesheet" type="text/css" href="css/grid.css">
+</head>
+<body>
+<section class="container">
+  <section id="header">
+    <section class="row image-wrapper">
+      <ul class="images-rotator">
+        <li class="food-tray"><img class="img-size rotator-img" src="img/media/Beef Cuisine/Beef Caldereta.jpg"></li>
+        <li class="food-tray"><img class="img-size rotator-img" src="img/media/Beef Cuisine/Beef Crisp.jpg"></li>
+        <li class="food-tray"><img class="img-size rotator-img" src="img/media/Beef Cuisine/Beef Ham.jpg"></li>
+        <li class="food-tray"><img class="img-size rotator-img" src="img/media/Chicken Cuisine/Chicken Alfredo.jpg"></li>
+        <li class="food-tray"><img class="img-size rotator-img" src="img/media/Beef Cuisine/Beef Steak Tagalog.jpg"></li>
+        <li class="food-tray"><img class="img-size rotator-img" src="img/media/Chicken Cuisine/Chicken Cordon Blue.jpg"></li>
+        <li class="food-tray"><img class="img-size rotator-img" src="img/media/Chicken Cuisine/Buffalo Chicken.jpg"></li>
+        <li class="food-tray"><img class="img-size rotator-img" src="img/media/Beef Cuisine/Corned Tenderloin Beef.jpg"></li>
+      </ul>
+    </section>
+    
+    <section class="row navigator">
+      <section class="row">
+
+      <section class="col-md-4 col-icon first-set-icon">
+        <section class="row">
+          <section class="col-md-6 ">
+            <img src="img/header/the-workforce-menu-item.png" class="list-icon">
+          </section>
+          <section class="col-md-6 ">
+            <img src="img/header/menu-and-packages-menu-item.png" class="list-icon">
+          </section>
+        </section>
+      </section>
+
+      <section class="col-md-4 col-logo">
+        <section class="row">
+         <section class="col-md-12 position-logo ">
+          <img src="img/header/s&p-logo.png" alt="" class="comp-logo">
+          <a href="#"><span class="book-online">Book Online</span></a>
+         </section>
+        </section>
+      </section>
+
+       <section class="col-md-4 col-icon second-set-icon">
+        <section class="row">
+          <section class="col-md-6 ">
+            <img src="img/header/testimonials-menu-item.png" class="list-icon">
+          </section>
+          <section class="col-md-6 ">
+            <img src="img/header/customer-rewards-menu-item.png" class="list-icon">
+          </section>
+        </section>
+        </section>
+
+      </section>
+    </section>
+  </section>
+  <section ng-controller ="tabController as nextTab" class="menu-packages-container">
+      	<section class="menu-package row">
+          <section class="menu-packages">Menu and Packages</section>
+         <section class="packages col-md-6">
+              <section class="menu-packages-title">
+                Packages
+              </section>
+              <a href="" ng-click="nextTab.setPackage(1)">
+                <section ng-class="{'active':nextTab.checkPackage(1)}" class="package-upperleft-icon col-md-4">
+                <img class="package-icon" src="img/package-icons/executive-buffet.png">
+                <span>Executive Buffet</span>
+              </section></a>
+              <a href="" ng-click="nextTab.setPackage(2)">
+                <section ng-class="{'active':nextTab.checkPackage(2)}" class="normal col-md-4">
+                <img class="package-icon" src="img/package-icons/cocktail-buffet.png"> 
+                <span>Cocktail Buffet</span>
+              </section></a>
+              <a href="" ng-click="nextTab.setPackage(3)">
+                <section ng-class="{'active':nextTab.checkPackage(3)}" class="normal col-md-4">
+                <img class="package-icon" src="img/package-icons/wedding-buffet.png"> 
+                <span>Wedding Buffet</span>
+              </section></a>  
+              <a href="" ng-click="nextTab.setPackage(4)">
+                <section ng-class="{'active':nextTab.checkPackage(4)}" class="package-lowerleft-icon col-md-4">
+                <img class="package-icon" src="img/package-icons/per-tray.png">
+                <span>Per Tray</span>
+              </section></a>
+              <a href="" ng-click="nextTab.setPackage(5)">
+                <section ng-class="{'active':nextTab.checkPackage(5)}" class="normal col-md-4">
+                <img class="package-icon" src="img/package-icons/pack-meals.png"> 
+                <span>Snacks And Meals</span>
+              </section></a>
+                <section class="arrowUp"></section>
+                <section ng-show ="nextTab.packageTab == 1" class="package-content col-md-11">
+                  <a href="" ng-click="nextTab.setPackage(1)"><section class="menu-close">X</section></a>
+                  <section class="package-content-title">Executive Package</section>
+                  <section class="package-list col-md-12">
+                    <section class="package-list-title">Package Inclusions</section>
+                    <ul class="package-lists col-md-5">
+                      <li>Cuisine of your Choice</li>
+                      <li>Complete Set Utensils</li>
+                      <li>Cocktail Glasses</li>
+                      <li>Buffet Table Set-up w/ Skirting</li>
+                      <li>Buffet Steel Spotlights</li>
+                    </ul>
+                    <ul class="package-lists col-md-5">
+                      <li>Food Name and Description Plates</li>
+                      <li>Chafing Dish w/ Serving Utinsels</li>
+                      <li>Uniformed Service Team</li>
+                      <li>Free Delivery (w/ in CDO)</li>
+                    </ul>
+                  </section>
+                  <section class="package-sub-nav col-md-12">
+
+                    <a href="" ng-click ="nextTab.setPrice(1)" ng-class="{'priceActive':nextTab.checkPrice(1)}">P180</a>
+                    <a href="" ng-click ="nextTab.setPrice(2)" ng-class="{'priceActive':nextTab.checkPrice(2)}">P200</a>
+                    <a href="" ng-click ="nextTab.setPrice(3)" ng-class="{'priceActive':nextTab.checkPrice(3)}">P220</a>
+       
+                </section>
+                <section ng-show="nextTab.price == 1" class="package-list col-md-12">
+                  <section class="package-list-title">Inclusions(1)</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Chicken OR Pork Cuisine</li>
+                    <li>Fish Cuisine</li>
+                    <li>Vegetable OR Salad Cuisine</li>
+                    <li>Pasta OR Pancit Cuisine</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Desert Selection</li>
+                    <li>Rice Selection</li>
+                    <li>Softdrinks OR Juice</li>
+                    <li>Mineral Water Station</li>
+                  </ul>
+                </section>
+                <section ng-show="nextTab.price == 2" class="package-list col-md-12">
+                  <section class="package-list-title">Inclusions(2)</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Chicken OR Pork Cuisine</li>
+                    <li>Fish Cuisine</li>
+                    <li>Vegetable OR Salad Cuisine</li>
+                    <li>Pasta OR Pancit Cuisine</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Desert Selection</li>
+                    <li>Rice Selection</li>
+                    <li>Softdrinks OR Juice</li>
+                    <li>Mineral Water Station</li>
+                  </ul>
+                </section>
+                <section ng-show="nextTab.price == 3" class="package-list col-md-12">
+                  <section class="package-list-title">Inclusions(3)</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Chicken OR Pork Cuisine</li>
+                    <li>Fish Cuisine</li>
+                    <li>Vegetable OR Salad Cuisine</li>
+                    <li>Pasta OR Pancit Cuisine</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Desert Selection</li>
+                    <li>Rice Selection</li>
+                    <li>Softdrinks OR Juice</li>
+                    <li>Mineral Water Station</li>
+                  </ul>
+                </section>
+                </section>
+                <section ng-show ="nextTab.packageTab == 2" class="package-content col-md-12">
+                <a href="" ng-click="nextTab.setPackage(1)"><section class="menu-close">X</section></a>
+                <section class="package-content-title">Cocktail Package</section>
+                <section class="package-list col-md-12">
+                  <section class="package-list-title">Package Inclusions</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Cuisine of your Choice</li>
+                    <li>Complete Set Utensils</li>
+                    <li>Cocktail Glasses</li>
+                    <li>Buffet Table Set-up w/ Skirting</li>
+                    <li>Buffet Steel Spotlights</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Food Name and Description Plates</li>
+                    <li>Chafing Dish w/ Serving Utinsels</li>
+                    <li>Uniformed Service Team</li>
+                    <li>Free Delivery (w/ in CDO)</li>
+                  </ul>
+                </section>
+                <section class="package-sub-nav col-md-12">
+
+                    <a href="" ng-click ="nextTab.setPrice(1)" ng-class="{'priceActive':nextTab.checkPrice(1)}">P180</a>
+                    <a href="" ng-click ="nextTab.setPrice(2)" ng-class="{'priceActive':nextTab.checkPrice(2)}">P200</a>
+                    <a href="" ng-click ="nextTab.setPrice(3)" ng-class="{'priceActive':nextTab.checkPrice(3)}">P220</a>
+       
+                </section>
+                <section ng-show="nextTab.price == 1" class="package-list col-md-12">
+                  <section class="package-list-title">Inclusions(1)</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Chicken OR Pork Cuisine</li>
+                    <li>Fish Cuisine</li>
+                    <li>Vegetable OR Salad Cuisine</li>
+                    <li>Pasta OR Pancit Cuisine</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Desert Selection</li>
+                    <li>Rice Selection</li>
+                    <li>Softdrinks OR Juice</li>
+                    <li>Mineral Water Station</li>
+                  </ul>
+                </section>
+                <section ng-show="nextTab.price == 2" class="package-list col-md-12">
+                  <section class="package-list-title">Inclusions(2)</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Chicken OR Pork Cuisine</li>
+                    <li>Fish Cuisine</li>
+                    <li>Vegetable OR Salad Cuisine</li>
+                    <li>Pasta OR Pancit Cuisine</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Desert Selection</li>
+                    <li>Rice Selection</li>
+                    <li>Softdrinks OR Juice</li>
+                    <li>Mineral Water Station</li>
+                  </ul>
+                </section>
+                <section ng-show="nextTab.price == 3" class="package-list col-md-12">
+                  <section class="package-list-title">Inclusions(3)</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Chicken OR Pork Cuisine</li>
+                    <li>Fish Cuisine</li>
+                    <li>Vegetable OR Salad Cuisine</li>
+                    <li>Pasta OR Pancit Cuisine</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Desert Selection</li>
+                    <li>Rice Selection</li>
+                    <li>Softdrinks OR Juice</li>
+                    <li>Mineral Water Station</li>
+                  </ul>
+                </section>
+              </section>
+              <section ng-show ="nextTab.packageTab == 3" class="package-content col-md-12">
+                <a href="" ng-click="nextTab.setPackage(1)"><section class="menu-close">X</section></a>
+                <section class="package-content-title">Wedding Package</section>
+                <section class="package-list col-md-12">
+                  <section class="package-list-title">Package Inclusions</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Cuisine of your Choice</li>
+                    <li>Complete Set Utensils</li>
+                    <li>Cocktail Glasses</li>
+                    <li>Buffet Table Set-up w/ Skirting</li>
+                    <li>Buffet Steel Spotlights</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Food Name and Description Plates</li>
+                    <li>Chafing Dish w/ Serving Utinsels</li>
+                    <li>Uniformed Service Team</li>
+                    <li>Free Delivery (w/ in CDO)</li>
+                  </ul>
+                </section>
+                <section class="package-sub-nav col-md-12">
+
+                    <a href="" ng-click ="nextTab.setPrice(1)" ng-class="{'priceActive':nextTab.checkPrice(1)}">P180</a>
+                    <a href="" ng-click ="nextTab.setPrice(2)" ng-class="{'priceActive':nextTab.checkPrice(2)}">P200</a>
+                    <a href="" ng-click ="nextTab.setPrice(3)" ng-class="{'priceActive':nextTab.checkPrice(3)}">P220</a>
+       
+                </section>
+                <section ng-show="nextTab.price == 1" class="package-list col-md-12">
+                  <section class="package-list-title">Inclusions(1)</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Chicken OR Pork Cuisine</li>
+                    <li>Fish Cuisine</li>
+                    <li>Vegetable OR Salad Cuisine</li>
+                    <li>Pasta OR Pancit Cuisine</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Desert Selection</li>
+                    <li>Rice Selection</li>
+                    <li>Softdrinks OR Juice</li>
+                    <li>Mineral Water Station</li>
+                  </ul>
+                </section>
+                <section ng-show="nextTab.price == 2" class="package-list col-md-12">
+                  <section class="package-list-title">Inclusions(2)</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Chicken OR Pork Cuisine</li>
+                    <li>Fish Cuisine</li>
+                    <li>Vegetable OR Salad Cuisine</li>
+                    <li>Pasta OR Pancit Cuisine</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Desert Selection</li>
+                    <li>Rice Selection</li>
+                    <li>Softdrinks OR Juice</li>
+                    <li>Mineral Water Station</li>
+                  </ul>
+                </section>
+                <section ng-show="nextTab.price == 3" class="package-list col-md-12">
+                  <section class="package-list-title">Inclusions(3)</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Chicken OR Pork Cuisine</li>
+                    <li>Fish Cuisine</li>
+                    <li>Vegetable OR Salad Cuisine</li>
+                    <li>Pasta OR Pancit Cuisine</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Desert Selection</li>
+                    <li>Rice Selection</li>
+                    <li>Softdrinks OR Juice</li>
+                    <li>Mineral Water Station</li>
+                  </ul>
+                </section>
+              </section>
+              <section ng-show ="nextTab.packageTab == 4" class="package-content col-md-12">
+                <a href="" ng-click="nextTab.setPackage(1)"><section class="menu-close">X</section></a>
+                <section class="package-content-title">Per Tray Package</section>
+                <section class="package-list col-md-12">
+                  <section class="package-list-title">Package Inclusions</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Cuisine of your Choice</li>
+                    <li>Complete Set Utensils</li>
+                    <li>Cocktail Glasses</li>
+                    <li>Buffet Table Set-up w/ Skirting</li>
+                    <li>Buffet Steel Spotlights</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Food Name and Description Plates</li>
+                    <li>Chafing Dish w/ Serving Utinsels</li>
+                    <li>Uniformed Service Team</li>
+                    <li>Free Delivery (w/ in CDO)</li>
+                  </ul>
+                </section>
+                <section class="package-sub-nav col-md-12">
+
+                    <a href="" ng-click ="nextTab.setPrice(1)" ng-class="{'priceActive':nextTab.checkPrice(1)}">P180</a>
+                    <a href="" ng-click ="nextTab.setPrice(2)" ng-class="{'priceActive':nextTab.checkPrice(2)}">P200</a>
+                    <a href="" ng-click ="nextTab.setPrice(3)" ng-class="{'priceActive':nextTab.checkPrice(3)}">P220</a>
+       
+                </section>
+                <section ng-show="nextTab.price == 1" class="package-list col-md-12">
+                  <section class="package-list-title">Inclusions(1)</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Chicken OR Pork Cuisine</li>
+                    <li>Fish Cuisine</li>
+                    <li>Vegetable OR Salad Cuisine</li>
+                    <li>Pasta OR Pancit Cuisine</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Desert Selection</li>
+                    <li>Rice Selection</li>
+                    <li>Softdrinks OR Juice</li>
+                    <li>Mineral Water Station</li>
+                  </ul>
+                </section>
+                <section ng-show="nextTab.price == 2" class="package-list col-md-12">
+                  <section class="package-list-title">Inclusions(2)</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Chicken OR Pork Cuisine</li>
+                    <li>Fish Cuisine</li>
+                    <li>Vegetable OR Salad Cuisine</li>
+                    <li>Pasta OR Pancit Cuisine</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Desert Selection</li>
+                    <li>Rice Selection</li>
+                    <li>Softdrinks OR Juice</li>
+                    <li>Mineral Water Station</li>
+                  </ul>
+                </section>
+                <section ng-show="nextTab.price == 3" class="package-list col-md-12">
+                  <section class="package-list-title">Inclusions(3)</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Chicken OR Pork Cuisine</li>
+                    <li>Fish Cuisine</li>
+                    <li>Vegetable OR Salad Cuisine</li>
+                    <li>Pasta OR Pancit Cuisine</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Desert Selection</li>
+                    <li>Rice Selection</li>
+                    <li>Softdrinks OR Juice</li>
+                    <li>Mineral Water Station</li>
+                  </ul>
+                </section>
+              </section>
+              <section ng-show ="nextTab.packageTab == 5" class="package-content col-md-12">
+                <a href="" ng-click="nextTab.setPackage(1)"><section class="menu-close">X</section></a>
+                <section class="package-content-title">Snack and Meal Package</section>
+                <section class="package-list col-md-12">
+                  <section class="package-list-title">Package Inclusions</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Cuisine of your Choice</li>
+                    <li>Complete Set Utensils</li>
+                    <li>Cocktail Glasses</li>
+                    <li>Buffet Table Set-up w/ Skirting</li>
+                    <li>Buffet Steel Spotlights</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Food Name and Description Plates</li>
+                    <li>Chafing Dish w/ Serving Utinsels</li>
+                    <li>Uniformed Service Team</li>
+                    <li>Free Delivery (w/ in CDO)</li>
+                  </ul>
+                </section>
+                <section class="package-sub-nav col-md-12">
+
+                    <a href="" ng-click ="nextTab.setPrice(1)" ng-class="{'priceActive':nextTab.checkPrice(1)}">P180</a>
+                    <a href="" ng-click ="nextTab.setPrice(2)" ng-class="{'priceActive':nextTab.checkPrice(2)}">P200</a>
+                    <a href="" ng-click ="nextTab.setPrice(3)" ng-class="{'priceActive':nextTab.checkPrice(3)}">P220</a>
+       
+                </section>
+                <section ng-show="nextTab.price == 1" class="package-list col-md-12">
+                  <section class="package-list-title">Inclusions(1)</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Chicken OR Pork Cuisine</li>
+                    <li>Fish Cuisine</li>
+                    <li>Vegetable OR Salad Cuisine</li>
+                    <li>Pasta OR Pancit Cuisine</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Desert Selection</li>
+                    <li>Rice Selection</li>
+                    <li>Softdrinks OR Juice</li>
+                    <li>Mineral Water Station</li>
+                  </ul>
+                </section>
+                <section ng-show="nextTab.price == 2" class="package-list col-md-12">
+                  <section class="package-list-title">Inclusions(2)</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Chicken OR Pork Cuisine</li>
+                    <li>Fish Cuisine</li>
+                    <li>Vegetable OR Salad Cuisine</li>
+                    <li>Pasta OR Pancit Cuisine</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Desert Selection</li>
+                    <li>Rice Selection</li>
+                    <li>Softdrinks OR Juice</li>
+                    <li>Mineral Water Station</li>
+                  </ul>
+                </section>
+                <section ng-show="nextTab.price == 3" class="package-list col-md-12">
+                  <section class="package-list-title">Inclusions(3)</section>
+                  <ul class="package-lists col-md-5">
+                    <li>Chicken OR Pork Cuisine</li>
+                    <li>Fish Cuisine</li>
+                    <li>Vegetable OR Salad Cuisine</li>
+                    <li>Pasta OR Pancit Cuisine</li>
+                  </ul>
+                  <ul class="package-lists col-md-5">
+                    <li>Desert Selection</li>
+                    <li>Rice Selection</li>
+                    <li>Softdrinks OR Juice</li>
+                    <li>Mineral Water Station</li>
+                  </ul>
+                </section>
+              </section>
+
+        </section>
+        <section class="menu col-md-6">
+            	<section class="menu-packages-title">
+                Menu
+              </section> 
+            	<a href="" ng-click="nextTab.setMenu(1)">
+                <section ng-class="{'active':nextTab.checkMenu(1)}" class="menu-upperleft-icon col-md-2">
+                <img class="menu-icon" src="img/cuisine-icons/beef.png"> 
+                <span>Beef</span>
+            	</section></a>
+            	<a href="" ng-click="nextTab.setMenu(2)">
+                <section ng-class="{'active':nextTab.checkMenu(2)}" class="normal col-md-2">
+                <img class="menu-icon" src="img/cuisine-icons/pancit.png">
+                 <span>Pancit</span>
+            	</section>
+              <a href="" ng-click="nextTab.setMenu(3)">
+                <section ng-class="{'active':nextTab.checkMenu(3)}" class="normal col-md-2">
+                <img class="menu-icon" src="img/cuisine-icons/pasta.png"> 
+                <span>Pasta</span>
+            	</section></a>
+            	<a href="" ng-click="nextTab.setMenu(4)">
+                <section ng-class="{'active':nextTab.checkMenu(4)}" class="normal col-md-2">
+                <img class="menu-icon" src="img/cuisine-icons/chicken.png"> 
+                <span>Chicken</span>
+            	</section></a>
+            	<a href="" ng-click="nextTab.setMenu(5)">
+                <section ng-class="{'active':nextTab.checkMenu(5)}" class="normal col-md-2">
+                <img class="menu-icon" src="img/cuisine-icons/rice.png"> 
+                <span>Rice</span>
+            	</section></a>
+              <a href="" ng-click="nextTab.setMenu(6)">
+                <section ng-class="{'active':nextTab.checkMenu(6)}" class="menu-lowerleft-icon col-md-2">
+                <img class="menu-icon" src="img/cuisine-icons/cocktail.png"> 
+                <span>Cocktail</span>
+              </section></a>
+              <a href="" ng-click="nextTab.setMenu(7)">
+                <section ng-class="{'active':nextTab.checkMenu(7)}" class="normal col-md-2">
+                <img class="menu-icon" src="img/cuisine-icons/fish.png"> 
+                <span>Fish</span>
+              </section></a>
+              <a href="" ng-click="nextTab.setMenu(8)">
+                <section ng-class="{'active':nextTab.checkMenu(8)}" class="normal col-md-2">
+                <img class="menu-icon" src="img/cuisine-icons/seafood.png"> 
+                <span>Seafood</span>
+              </section> </a>
+              <a href="" ng-click="nextTab.setMenu(9)">
+                <section ng-class="{'active':nextTab.checkMenu(9)}" class="normal col-md-2">
+                <img class="menu-icon" src="img/cuisine-icons/vegetables.png"> 
+                <span>Vegetables</span>
+              </section></a>
+               <section ng-show ="nextTab.menuTab == 1" class="menu-content col-md-12">
+                  <a href="" ng-click="nextTab.setMenu(1)"><section class="menu-close">X</section></a>
+                  <section class="menu-content-title">Beef Cuisine</section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Beef/Beef Caldereta 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Beef/Beef Crisp 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Beef/Beef Ham 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Beef/Beef Mushroom 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Beef/Beef Steak Tagalog 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Beef/Beef Tapa 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Beef/Braised Beef 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Beef/Corned Tenderloin Beef 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Beef/Romanian Beef Cream 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Beef/Singaporean Beef Curry 12.jpg">
+                  </section>
+              </section>
+               <section ng-show ="nextTab.menuTab == 2" class="menu-content col-md-12">
+                  <a href="" ng-click="nextTab.setMenu(1)"><section class="menu-close">X</section></a>
+                  <section class="menu-content-title">Pancit Cuisine</section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Pancit/Bam-i 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Pancit/Pancit Guisado 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Pancit/Royale Palabok 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Pancit/Sotanghon 1.jpg">
+                  </section>
+              </section> 
+              <section ng-show ="nextTab.menuTab == 3" class="menu-content col-md-12">
+                  <a href="" ng-click="nextTab.setMenu(1)"><section class="menu-close">X</section></a>
+                  <section class="menu-content-title">Pasta Cuisine</section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Pasta/Beef Mushroom Pasta 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Pasta/Fettucini de Franca 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Pasta/Pesto Pasta 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Pasta/Sgahetti Blognese 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Pasta/Spaghetti 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Pasta/Supremo Carbonara 1.jpg">
+                  </section>
+              </section>
+              <section ng-show ="nextTab.menuTab == 4" class="menu-content col-md-12">
+                  <a href="" ng-click="nextTab.setMenu(1)"><section class="menu-close">X</section></a>
+                  <section class="menu-content-title">Chicken Cuisine</section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Bavarian Chicken 11.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Breaded Chicken w Mayo 11.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Buffalo Chicken 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Chicken Adobo 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Chicken Adobo 11.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Chicken Ala Pobre 11.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Chicken BBQ 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Chicken Cocktail 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Chicken Cordon Blue 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Chicken Curry 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Chicken Lollipop 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Chicken Lumpia 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Chicken Tocino 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Garlic Chicken 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Glazed Chicken 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Chicken/Grilled Chicken 1.jpg">
+                  </section>
+              </section>
+              <section ng-show ="nextTab.menuTab == 5" class="menu-content col-md-12">
+                  <a href="" ng-click="nextTab.setMenu(1)"><section class="menu-close">X</section></a>
+                  <section class="menu-content-title">Rice Cuisine</section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Rice/Gralic Rice 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Rice/Oriental Java Rice 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Rice/Platinum Rice 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Rice/Shanghai Rice 1.jpg">
+                  </section>
+              </section>
+              <section ng-show ="nextTab.menuTab == 6" class="menu-content col-md-12">
+                  <a href="" ng-click="nextTab.setMenu(1)"><section class="menu-close">X</section></a>
+                  <section class="menu-content-title">Cocktail Cuisine</section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Cocktails/Banana Cream 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Cocktails/Beef Burger 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Cocktails/Chicken Lollipop 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Cocktails/Chicken Lumpia 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Cocktails/Chicken Nuggets 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Cocktails/Chicken Sandwhich 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Cocktails/Clubhouse Ham 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Cocktails/Fish w Mayo Dip 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Cocktails/Salami Burger 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Cocktails/Spaghetti Angle Bread 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Cocktails/Tuna Sandwhich 1.jpg">
+                  </section>
+              </section>
+              <section ng-show ="nextTab.menuTab == 7" class="menu-content col-md-12">
+                  <a href="" ng-click="nextTab.setMenu(1)"><section class="menu-close">X</section></a>
+                  <section class="menu-content-title">Fish Cuisine</section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Fish/Fish BBQ Sauce 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Fish/Fish Sweet & Sour 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Fish/Fish w Cream Corn 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Fish/Fish w Lemon Sauce 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Fish/Fish w Mayo Dip 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Fish/Fish w Sour Cream 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Fish/Fush Tausi 1.jpg">
+                  </section>
+              </section>
+              <section ng-show ="nextTab.menuTab == 8" class="menu-content col-md-12">
+                  <a href="" ng-click="nextTab.setMenu(1)"><section class="menu-close">X</section></a>
+                  <section class="menu-content-title">Seafood Cuisine</section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Seafood/Boneless Bangus  1 .jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Seafood/Calamares 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Seafood/Fried Boneless  1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Seafood/Fried Calamares 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Seafood/Fried Garlic Prawns 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Seafood/Garlic Prawns 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Seafood/Grilled Tuna Belly 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Seafood/Kinilaw 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Seafood/Kinilaw Malasugue 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Seafood/Seafood Kebab 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Seafood/Sweet & Sour Lapu lapu 1.jpg">
+                  </section>
+              </section>
+              <section ng-show ="nextTab.menuTab == 9" class="menu-content col-md-12">
+                  <a href="" ng-click="nextTab.setMenu(1)"><section class="menu-close">X</section></a>
+                  <section class="menu-content-title">Vegetable Cuisine</section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Vegetables/Four Season 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Vegetables/Lettuce Ceasar 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Vegetables/Mandarin Chopsuey 1.jpg">
+                  </section>
+                  <section class="food-img col-md-4">
+                    <img class="package-img" src="img/media/Web Vegetables/Thousalnd Island Supreme 1.jpg">
+                  </section>
+              </section>
+         </section> 
+    </section>
+    </section>
+    <section class="footer-inner-container">
+      <section class="row">
+ 
+         <section class="about col-md-3">
+            <section class="footer-titles">About Spoon and Pepper</section>
+            <section class="address">Cagayan de Oro City based Catering Services.  </section>
+            <section class="list">
+  <ul>
+    <section class="accepts"> Accpets:</section>
+    <li>Executive Buffet </li>
+    <li>Cocktail Buffet</li>
+    <li>Wedding Buffet </li>
+    <li>Per Tray </li>
+    <li>Packed Meals &amp; Snacks </li>
+  
+  </ul>
+
+</section>
+         </section>
+         <section class="contact col-md-3">
+            <section class="footer-titles">Contact Spoon and Pepper</section>
+            <section class="contan-num">
+              <p>324-0806</p>
+              <p>09177002118</p>
+            </section>
+            <section class="address">10th -21st Nazareth, Cagayan de Oro City, 9000, Philippines
+              spoonandpepperfoods@gmail.com</section>
+              <section>
+                <ul class="unstyled">
+                  <li><a href="#"><img class="icon" src="img/twitter.png"></a></li>
+                  <li><a href="#"><img class="icon" src="img/FB.png"></a></li>
+                </ul>
+              </section>
+                         <section class="footer-titles">Share us on</section>
+                         <section class="logo">
+             <a href="#"><img class="icon" src="img/twitter.png"></a>
+             <a href="#"><img class="icon" src="img/FB.png"></a>
+             <a href="#"><img class="icon" src="img/Instagram.png"></a>
+              </section>
+         </section>
+         <section class="map col-md-6">
+            <section class="footer-titles">Visit Us today:</section>
+            <section>
+              <img  class="map-img" src="img/map.png">
+              <img  class="spot" src="img/spot.png">
+
+            </section>
+
+         </section>
+      </section>
+      <section class="copyright row">
+      <section class="col-md-6">&copy; Copyright 2014 Spoon &amp; Pepper.</section>
+      <section class="right col-md-6">
+        Designed and Developed by Webnified
+        <img class="web" src="img/web.png">
+      </section>
+      </section>
+</section>
+  </section>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="lib/script.js"></script>
+  <script src="js/angular.min.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>
